@@ -4,14 +4,17 @@ package jo11;
 import java.util.Scanner;
 
 public class z {
-    private static void tampilJudul(String identitas) {
-      System.out.println("Identitas : " + identitas);
-      
-      System.out.println("\nConvert kalimat alay angka (Vokal ke angka)\n");
+private static String tampilInput(){
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Masukkan Kalimat: ");
+        String kalimat = scanner.nextLine();
+        System.out.println("Kalimat Asli : " + kalimat);
+        
+        return kalimat;
+    }    
+public static void main(String[] args){
+    String kalimat = tampilInput();
 }
-     public static void main(String[] args){
-        String identitas = "Widya Gading Sejati / XRPL2 / 38";
-        tampilJudul(identitas);
-        }
 }
 
