@@ -13,6 +13,9 @@ public class y {
      public static void main(String[] args){
         String identitas = "Widya Gading Sejati / XRPL2 / 38";
         tampilJudul(identitas);
+        String convert = vocal2Angka(kalimat);
+        tampilPerkata(kalimat, convert);
+        tampilHasil(convert);
      }
         private static String tampilInput(){
         Scanner scanner = new Scanner(System.in);
@@ -26,7 +29,9 @@ public class y {
         String kalimat = tampilInput();
         
         private static String vocal2Angka(String kalimat){
-        char [][] arConvert = 
+            
+        char [][] arConvert =
+                
         {{'a','4'},{'i','1'},{'u','2'},{'e','3'},{'o','0'}};
         
         kalimat = kalimat.toLowerCase();
