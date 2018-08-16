@@ -10,16 +10,23 @@ public class z {
  String z = "operasi";
  String r = "operasi";
  String s = "operasI";
- System.out.println("pada x terdapat huruf 'a' : " + x.contains("a"));
-     
-      System.out.println("isi variabel x besar semua : "+ x.toUpperCase());
-      System.out.println("isi variabel x kecil semua : "+ x.toLowerCase());
+ String t = "    operasi string   ";
+  System.out.println("karaktr mulai posisi 3 di vaiabel x : " + x.substring(3));
+      System.out.println("karekter dari posisi 3-5 di variabel x : " + x.substring(3,6));
       
-      String t = "    operasi string   ";
-       System.out.println("isi variabel t : \""+ t +"");
-        System.out.println("isi variabel t tanpa spasi : \""+ t.trim() +"\"");
+      String tclean = t.trim();
+      System.out.println("isi variabel tclean : "+ t.trim());
+      System.out.println("rubah 'i' jadi 'E' di variabel tclean : " + tclean.replace("i", "E"));
+      
+      String[] arrT = tclean.split(" ");
+       System.out.println("pecah kata di variabel tclean : ");
+       for(int i=0; i<arrT.length; i++)
+          System.out.println(arrT[i]);
+       String[] arrTr = tclean.split("r");
+        System.out.println("pecah berdasarkan huruf 'r' di variabel tclean : ");
         
-         System.out.println("gabungkan isi variabel  x dan r : "+ x.concat(r));
+        for(int i=0; i<arrTr.length; i++)
+         System.out.println(arrTr[i]);
      
      
 }
